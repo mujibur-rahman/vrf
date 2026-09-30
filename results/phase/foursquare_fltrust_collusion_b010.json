@@ -1,0 +1,142 @@
+[
+  {
+    "dataset": "foursquare",
+    "target_kind": "demand_density",
+    "method": "fltrust",
+    "attack": "collusion",
+    "ratio": 0.5,
+    "seed": 0,
+    "selection": "vrf",
+    "forced_beta": 0.1,
+    "mae": 0.17904062569141388,
+    "fairness_all": 0.07216496621986974,
+    "fairness_surge": 0.08573050762411494,
+    "fairness_nonsurge": 0.02347998105633905,
+    "influence": {
+      "honest": 0.03281014232505604,
+      "malicious": 0.03342727235985969
+    },
+    "trust": {
+      "final_gap": NaN,
+      "convergence_round": NaN
+    },
+    "server_time_ms_per_round": 5.315952500131971,
+    "n_clients": 165,
+    "n_malicious": 82,
+    "beta_mean": 0.09090909090909091,
+    "beta_std": 0.0,
+    "beta_max": 0.09090909090909091
+  },
+  {
+    "dataset": "foursquare",
+    "target_kind": "demand_density",
+    "method": "fltrust",
+    "attack": "collusion",
+    "ratio": 0.5,
+    "seed": 1,
+    "selection": "vrf",
+    "forced_beta": 0.1,
+    "mae": 0.1670587658882141,
+    "fairness_all": 0.08178595802551811,
+    "fairness_surge": 0.09568980421993432,
+    "fairness_nonsurge": 0.028597960166449124,
+    "influence": {
+      "honest": 0.026612715625003683,
+      "malicious": 0.06477290280741631
+    },
+    "trust": {
+      "final_gap": NaN,
+      "convergence_round": NaN
+    },
+    "server_time_ms_per_round": 5.333847500151023,
+    "n_clients": 165,
+    "n_malicious": 82,
+    "beta_mean": 0.09090909090909091,
+    "beta_std": 0.0,
+    "beta_max": 0.09090909090909091
+  },
+  {
+    "dataset": "foursquare",
+    "target_kind": "demand_density",
+    "method": "fltrust",
+    "attack": "collusion",
+    "ratio": 0.5,
+    "seed": 2,
+    "selection": "vrf",
+    "forced_beta": 0.1,
+    "mae": 0.1912306398153305,
+    "fairness_all": 0.06503156999057637,
+    "fairness_surge": 0.07738026797643528,
+    "fairness_nonsurge": 0.022039775865442996,
+    "influence": {
+      "honest": 0.026956893793574188,
+      "malicious": 0.05198420845527867
+    },
+    "trust": {
+      "final_gap": NaN,
+      "convergence_round": NaN
+    },
+    "server_time_ms_per_round": 5.260422499122797,
+    "n_clients": 165,
+    "n_malicious": 82,
+    "beta_mean": 0.09090909090909091,
+    "beta_std": 0.0,
+    "beta_max": 0.09090909090909091
+  },
+  {
+    "dataset": "foursquare",
+    "target_kind": "demand_density",
+    "method": "fltrust",
+    "attack": "collusion",
+    "ratio": 0.5,
+    "seed": 3,
+    "selection": "vrf",
+    "forced_beta": 0.1,
+    "mae": 0.19481076300144196,
+    "fairness_all": 0.0647476117919134,
+    "fairness_surge": 0.07230877951846008,
+    "fairness_nonsurge": 0.026192520376809265,
+    "influence": {
+      "honest": 0.02845202260254443,
+      "malicious": 0.044196506476626124
+    },
+    "trust": {
+      "final_gap": NaN,
+      "convergence_round": NaN
+    },
+    "server_time_ms_per_round": 5.212487500466523,
+    "n_clients": 165,
+    "n_malicious": 82,
+    "beta_mean": 0.09090909090909091,
+    "beta_std": 0.0,
+    "beta_max": 0.09090909090909091
+  },
+  {
+    "dataset": "foursquare",
+    "target_kind": "demand_density",
+    "method": "fltrust",
+    "attack": "collusion",
+    "ratio": 0.5,
+    "seed": 4,
+    "selection": "vrf",
+    "forced_beta": 0.1,
+    "mae": 0.17272506654262543,
+    "fairness_all": 0.07417159292091104,
+    "fairness_surge": 0.0875917326800651,
+    "fairness_nonsurge": 0.024786059748547497,
+    "influence": {
+      "honest": 0.02769507737410549,
+      "malicious": 0.05300951137687591
+    },
+    "trust": {
+      "final_gap": NaN,
+      "convergence_round": NaN
+    },
+    "server_time_ms_per_round": 5.247860000054061,
+    "n_clients": 165,
+    "n_malicious": 82,
+    "beta_mean": 0.09090909090909091,
+    "beta_std": 0.0,
+    "beta_max": 0.09090909090909091
+  }
+]

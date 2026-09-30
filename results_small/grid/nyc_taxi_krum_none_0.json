@@ -1,0 +1,86 @@
+[
+  {
+    "dataset": "nyc_taxi",
+    "target_kind": "surge_proxy",
+    "method": "krum",
+    "attack": "none",
+    "ratio": 0.0,
+    "seed": 0,
+    "selection": "vrf",
+    "forced_beta": null,
+    "mae": 0.3870495557785034,
+    "fairness_all": 0.09913672574082132,
+    "fairness_surge": 0.1020650890494652,
+    "fairness_nonsurge": 0.09513472767119903,
+    "influence": {
+      "honest": 0.07990766740740764,
+      "malicious": NaN
+    },
+    "trust": {
+      "final_gap": NaN,
+      "convergence_round": NaN
+    },
+    "server_time_ms_per_round": 40.29515000001993,
+    "n_clients": 74,
+    "n_malicious": 0,
+    "beta_mean": 0.0,
+    "beta_std": 0.0,
+    "beta_max": 0.0
+  },
+  {
+    "dataset": "nyc_taxi",
+    "target_kind": "surge_proxy",
+    "method": "krum",
+    "attack": "none",
+    "ratio": 0.0,
+    "seed": 1,
+    "selection": "vrf",
+    "forced_beta": null,
+    "mae": 0.36352527141571045,
+    "fairness_all": 0.09959846623651131,
+    "fairness_surge": 0.1022254389009485,
+    "fairness_nonsurge": 0.09639556422199898,
+    "influence": {
+      "honest": 0.06472007721986986,
+      "malicious": NaN
+    },
+    "trust": {
+      "final_gap": NaN,
+      "convergence_round": NaN
+    },
+    "server_time_ms_per_round": 41.479099999560276,
+    "n_clients": 74,
+    "n_malicious": 0,
+    "beta_mean": 0.0,
+    "beta_std": 0.0,
+    "beta_max": 0.0
+  },
+  {
+    "dataset": "nyc_taxi",
+    "target_kind": "surge_proxy",
+    "method": "krum",
+    "attack": "none",
+    "ratio": 0.0,
+    "seed": 2,
+    "selection": "vrf",
+    "forced_beta": null,
+    "mae": 0.4350726008415222,
+    "fairness_all": 0.07888531084974626,
+    "fairness_surge": 0.07856489317046536,
+    "fairness_nonsurge": 0.07806180520176258,
+    "influence": {
+      "honest": 0.06440115815095077,
+      "malicious": NaN
+    },
+    "trust": {
+      "final_gap": NaN,
+      "convergence_round": NaN
+    },
+    "server_time_ms_per_round": 42.693912498725695,
+    "n_clients": 74,
+    "n_malicious": 0,
+    "beta_mean": 0.0,
+    "beta_std": 0.0,
+    "beta_max": 0.0
+  }
+]

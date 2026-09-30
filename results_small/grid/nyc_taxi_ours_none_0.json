@@ -1,0 +1,86 @@
+[
+  {
+    "dataset": "nyc_taxi",
+    "target_kind": "surge_proxy",
+    "method": "ours",
+    "attack": "none",
+    "ratio": 0.0,
+    "seed": 0,
+    "selection": "vrf",
+    "forced_beta": null,
+    "mae": 0.3808510899543762,
+    "fairness_all": 0.09132737817533158,
+    "fairness_surge": 0.0957274430035863,
+    "fairness_nonsurge": 0.08552235769062917,
+    "influence": {
+      "honest": 0.06527111247941944,
+      "malicious": NaN
+    },
+    "trust": {
+      "final_gap": 0.0,
+      "convergence_round": 1.0
+    },
+    "server_time_ms_per_round": 9.278932500819792,
+    "n_clients": 74,
+    "n_malicious": 0,
+    "beta_mean": 0.0,
+    "beta_std": 0.0,
+    "beta_max": 0.0
+  },
+  {
+    "dataset": "nyc_taxi",
+    "target_kind": "surge_proxy",
+    "method": "ours",
+    "attack": "none",
+    "ratio": 0.0,
+    "seed": 1,
+    "selection": "vrf",
+    "forced_beta": null,
+    "mae": 0.3753492534160614,
+    "fairness_all": 0.09629134440767997,
+    "fairness_surge": 0.10110970180869627,
+    "fairness_nonsurge": 0.09013257387821733,
+    "influence": {
+      "honest": 0.07115028484895941,
+      "malicious": NaN
+    },
+    "trust": {
+      "final_gap": 0.0,
+      "convergence_round": 1.0
+    },
+    "server_time_ms_per_round": 7.575072501276736,
+    "n_clients": 74,
+    "n_malicious": 0,
+    "beta_mean": 0.0,
+    "beta_std": 0.0,
+    "beta_max": 0.0
+  },
+  {
+    "dataset": "nyc_taxi",
+    "target_kind": "surge_proxy",
+    "method": "ours",
+    "attack": "none",
+    "ratio": 0.0,
+    "seed": 2,
+    "selection": "vrf",
+    "forced_beta": null,
+    "mae": 0.4015263020992279,
+    "fairness_all": 0.09217877048273687,
+    "fairness_surge": 0.09978077703983423,
+    "fairness_nonsurge": 0.08212775208275734,
+    "influence": {
+      "honest": 0.06950664461710547,
+      "malicious": NaN
+    },
+    "trust": {
+      "final_gap": 0.0,
+      "convergence_round": 1.0
+    },
+    "server_time_ms_per_round": 7.655567500114557,
+    "n_clients": 74,
+    "n_malicious": 0,
+    "beta_mean": 0.0,
+    "beta_std": 0.0,
+    "beta_max": 0.0
+  }
+]

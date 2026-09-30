@@ -1,0 +1,142 @@
+[
+  {
+    "dataset": "geolife",
+    "target_kind": "demand_density",
+    "method": "fltrust",
+    "attack": "model_stealth",
+    "ratio": 0.4,
+    "seed": 0,
+    "selection": "vrf",
+    "forced_beta": null,
+    "mae": 0.39124158024787903,
+    "fairness_all": 0.21032979181789918,
+    "fairness_surge": 0.25133871574394634,
+    "fairness_nonsurge": 0.13447538250506386,
+    "influence": {
+      "honest": 0.19998576399231285,
+      "malicious": 0.050758102545818466
+    },
+    "trust": {
+      "final_gap": NaN,
+      "convergence_round": NaN
+    },
+    "server_time_ms_per_round": 1.9488550007736194,
+    "n_clients": 37,
+    "n_malicious": 15,
+    "beta_mean": 0.36952651515151513,
+    "beta_std": 0.19301847219371465,
+    "beta_max": 0.75
+  },
+  {
+    "dataset": "geolife",
+    "target_kind": "demand_density",
+    "method": "fltrust",
+    "attack": "model_stealth",
+    "ratio": 0.4,
+    "seed": 1,
+    "selection": "vrf",
+    "forced_beta": null,
+    "mae": 0.4825558364391327,
+    "fairness_all": 0.3127915077660564,
+    "fairness_surge": 0.38675252913182856,
+    "fairness_nonsurge": 0.15483371587977401,
+    "influence": {
+      "honest": 0.14829179199346287,
+      "malicious": 0.051770072025870646
+    },
+    "trust": {
+      "final_gap": NaN,
+      "convergence_round": NaN
+    },
+    "server_time_ms_per_round": 2.343519999885757,
+    "n_clients": 37,
+    "n_malicious": 15,
+    "beta_mean": 0.3798681873681874,
+    "beta_std": 0.17411264482448718,
+    "beta_max": 0.75
+  },
+  {
+    "dataset": "geolife",
+    "target_kind": "demand_density",
+    "method": "fltrust",
+    "attack": "model_stealth",
+    "ratio": 0.4,
+    "seed": 2,
+    "selection": "vrf",
+    "forced_beta": null,
+    "mae": 0.3839358389377594,
+    "fairness_all": 0.16308712840430745,
+    "fairness_surge": 0.18594812234481886,
+    "fairness_nonsurge": 0.12271863585301508,
+    "influence": {
+      "honest": 0.19868770617853004,
+      "malicious": 0.029815114785730457
+    },
+    "trust": {
+      "final_gap": NaN,
+      "convergence_round": NaN
+    },
+    "server_time_ms_per_round": 1.7129150000982918,
+    "n_clients": 37,
+    "n_malicious": 15,
+    "beta_mean": 0.35727272727272724,
+    "beta_std": 0.14145083513435205,
+    "beta_max": 0.6666666666666666
+  },
+  {
+    "dataset": "geolife",
+    "target_kind": "demand_density",
+    "method": "fltrust",
+    "attack": "model_stealth",
+    "ratio": 0.4,
+    "seed": 3,
+    "selection": "vrf",
+    "forced_beta": null,
+    "mae": 0.4162212014198303,
+    "fairness_all": 0.24443533685144336,
+    "fairness_surge": 0.3103407236468233,
+    "fairness_nonsurge": 0.12789087039048028,
+    "influence": {
+      "honest": 0.20265959726970653,
+      "malicious": 0.03970818497013581
+    },
+    "trust": {
+      "final_gap": NaN,
+      "convergence_round": NaN
+    },
+    "server_time_ms_per_round": 1.647532499555382,
+    "n_clients": 37,
+    "n_malicious": 15,
+    "beta_mean": 0.468648088023088,
+    "beta_std": 0.17400453265971402,
+    "beta_max": 0.8
+  },
+  {
+    "dataset": "geolife",
+    "target_kind": "demand_density",
+    "method": "fltrust",
+    "attack": "model_stealth",
+    "ratio": 0.4,
+    "seed": 4,
+    "selection": "vrf",
+    "forced_beta": null,
+    "mae": 0.5002451539039612,
+    "fairness_all": 0.253793010153056,
+    "fairness_surge": 0.3127974242741631,
+    "fairness_nonsurge": 0.10739203601472885,
+    "influence": {
+      "honest": 0.19818892806695043,
+      "malicious": 0.038196089355112005
+    },
+    "trust": {
+      "final_gap": NaN,
+      "convergence_round": NaN
+    },
+    "server_time_ms_per_round": 1.6453699998237425,
+    "n_clients": 37,
+    "n_malicious": 15,
+    "beta_mean": 0.3779387279387279,
+    "beta_std": 0.17283238815076574,
+    "beta_max": 0.7
+  }
+]

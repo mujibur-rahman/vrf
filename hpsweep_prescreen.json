@@ -1,0 +1,66 @@
+{
+  "days": 3,
+  "clients": 241,
+  "selected": {
+    "ours": "psi=0.7,lam=0.85",
+    "trimmed_mean": "trim=0.3",
+    "fltrust": "root=200"
+  },
+  "val_mae": {
+    "ours|psi=0.5,lam=0.7": 0.28240296989679337,
+    "ours|psi=0.5,lam=0.85": 0.28323474526405334,
+    "ours|psi=0.5,lam=0.95": 0.2817157581448555,
+    "ours|psi=0.7,lam=0.7": 0.28205788135528564,
+    "ours|psi=0.7,lam=0.85": 0.2809673249721527,
+    "ours|psi=0.7,lam=0.95": 0.28449713438749313,
+    "ours|psi=0.85,lam=0.7": 0.2824450433254242,
+    "ours|psi=0.85,lam=0.85": 0.2822488322854042,
+    "ours|psi=0.85,lam=0.95": 0.28375188261270523,
+    "ours|psi=0.95,lam=0.7": 0.2847963273525238,
+    "ours|psi=0.95,lam=0.85": 0.2819114029407501,
+    "ours|psi=0.95,lam=0.95": 0.2832002565264702,
+    "trimmed_mean|trim=0.1": 0.2953663319349289,
+    "trimmed_mean|trim=0.2": 0.2857266589999199,
+    "trimmed_mean|trim=0.3": 0.2825123816728592,
+    "fltrust|root=100": 0.3195296674966812,
+    "fltrust|root=200": 0.2867360785603523,
+    "fltrust|root=400": 0.3115830421447754
+  },
+  "test": {
+    "fedavg/selected": {
+      "setting": "default",
+      "model": 18.602927207946777,
+      "collusion": 0.2271493375301361
+    },
+    "trimmed_mean/selected": {
+      "setting": "trim=0.3",
+      "model": 0.19935425370931625,
+      "collusion": 0.20107445865869522
+    },
+    "trimmed_mean/default": {
+      "setting": "trim=0.2",
+      "model": 0.19923347234725952,
+      "collusion": 0.20559976249933243
+    },
+    "krum/selected": {
+      "setting": "default",
+      "model": 0.20083821564912796,
+      "collusion": 0.21029668301343918
+    },
+    "fltrust/selected": {
+      "setting": "root=200",
+      "model": 0.20515530556440353,
+      "collusion": 0.2186252325773239
+    },
+    "foolsgold/selected": {
+      "setting": "default",
+      "model": 1.6675239950418472,
+      "collusion": 0.18531876802444458
+    },
+    "ours/selected": {
+      "setting": "psi=0.7,lam=0.85",
+      "model": 0.1955689862370491,
+      "collusion": 0.2095383107662201
+    }
+  }
+}

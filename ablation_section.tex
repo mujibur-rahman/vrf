@@ -1,0 +1,49 @@
+\subsection{Ablation Study}
+
+We isolate the contribution of the two components under 20\% adversarial
+clients on NYC-Taxi (mean over 5 seeds). The two factors are the
+\emph{selection} mechanism and the \emph{aggregation} rule. For the selection
+axis we contrast a biasing coordinator that concentrates the committee to an
+adversarial share $\beta=0.5$ (``no VRF'') against VRF self-selection, which by
+Proposition~\ref{prop:concentration} holds $\beta$ at the population rate
+$\alpha=0.2$; for the aggregation axis we contrast the sample mean (FedAvg)
+against the proposed trust-weighted rule. Table~\ref{tab:ablation} reports the
+four variants.
+
+The two components are \emph{necessary and complementary} rather than additively
+incremental. Without VRF, the coordinator concentrates malicious clients in the
+committee and prediction error diverges by three-to-five orders of magnitude for
+\emph{both} the mean and the trust-weighted rule (FedAvg and ``Trust only'') --
+trust-aware aggregation cannot recover once the committee is dominated. Without
+trust, mean aggregation still diverges under model poisoning even at the
+VRF-bounded $\beta=0.2$ (``VRF only'', MAE $225.6$), because a norm-inflated
+minority overwhelms the average; under collusion, where magnitudes are milder,
+VRF-bounded mean aggregation is already stable ($0.268$) and trust further lowers
+error and malicious influence ($0.252$, influence $0.033\!\to\!0.024$). Only the
+full method is robust under both attacks (MAE $0.238$ / $0.252$). This confirms
+the design rationale: VRF-based selection bounds adversarial concentration during
+participation, and trust-aware aggregation limits the impact of the remaining
+malicious updates -- and neither alone suffices.
+
+\begin{table}[t]
+\centering
+\caption{Ablation under 20\% adversarial clients on NYC-Taxi. Selection axis: a
+biasing coordinator concentrates the committee to $\beta=0.5$ without VRF, while
+VRF holds $\beta=\alpha=0.2$. Mean over 5 seeds; lower is better.}
+\label{tab:ablation}
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcccc}
+\toprule
+& \multicolumn{2}{c}{\textbf{Model poisoning}} & \multicolumn{2}{c}{\textbf{Collusion}} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+\textbf{Variant} & \textbf{MAE $\downarrow$} & \textbf{Mal.\ Inf.\ $\downarrow$}
+                 & \textbf{MAE $\downarrow$} & \textbf{Mal.\ Inf.\ $\downarrow$} \\
+\midrule
+FedAvg (no VRF, mean)    & $3.4{\times}10^{5}$ & 0.033 & $3.3{\times}10^{4}$ & 0.030 \\
+Trust only (no VRF)      & $2.9{\times}10^{4}$ & 0.035 & $1.8{\times}10^{4}$ & 0.033 \\
+VRF only (mean)          & $225.6$             & 0.056 & $0.268$             & 0.033 \\
+Full method              & $\mathbf{0.238}$    & 0.048 & $\mathbf{0.252}$    & $\mathbf{0.024}$ \\
+\bottomrule
+\end{tabular}
+\end{table}

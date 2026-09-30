@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\caption{Prediction MAE under each attack family at 20\% adversarial clients (benign column for reference). Mean $\pm$ std over completed seeds; the best (lowest) MAE per column within each dataset is \underline{underlined}. Diverged cells are shown in scientific form. Lower is better.}
+\label{tab:combined}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Method} & \textbf{Benign} & \textbf{Data} & \textbf{Model} & \textbf{Collusion} \\
+\midrule
+\multicolumn{5}{l}{\textit{NYC-Taxi}} \\
+FedAvg & 0.488\,$\pm$\,0.009 & 0.515\,$\pm$\,0.020 & 5.763\,$\pm$\,5.454 & 0.629\,$\pm$\,0.176 \\
+Trimmed Mean & 0.480\,$\pm$\,0.007 & 0.511\,$\pm$\,0.005 & 0.485\,$\pm$\,0.013 & 0.525\,$\pm$\,0.073 \\
+Krum & 0.491\,$\pm$\,0.024 & 0.529\,$\pm$\,0.054 & 0.484\,$\pm$\,0.014 & 0.489\,$\pm$\,0.030 \\
+FLTrust & 0.490\,$\pm$\,0.009 & 0.514\,$\pm$\,0.008 & 0.475\,$\pm$\,0.017 & 0.489\,$\pm$\,0.019 \\
+FoolsGold & \underline{0.468\,$\pm$\,0.002} & \underline{0.468\,$\pm$\,0.005} & \underline{0.467\,$\pm$\,0.005} & \underline{0.471\,$\pm$\,0.002} \\
+\textbf{Ours} & 0.474\,$\pm$\,0.007 & 0.487\,$\pm$\,0.004 & 0.481\,$\pm$\,0.014 & 0.480\,$\pm$\,0.007 \\
+\bottomrule
+\end{tabular}
+\end{table*}

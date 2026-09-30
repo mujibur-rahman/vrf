@@ -1,0 +1,142 @@
+[
+  {
+    "dataset": "yelp",
+    "target_kind": "demand_density",
+    "method": "fltrust",
+    "attack": "data",
+    "ratio": 0.1,
+    "seed": 0,
+    "selection": "vrf",
+    "forced_beta": null,
+    "mae": 0.006190218962728977,
+    "fairness_all": 0.001846103699945915,
+    "fairness_surge": 0.0020067191506810632,
+    "fairness_nonsurge": 0.000694700371609313,
+    "influence": {
+      "honest": 0.3275313545380353,
+      "malicious": 0.34322995468326317
+    },
+    "trust": {
+      "final_gap": NaN,
+      "convergence_round": NaN
+    },
+    "server_time_ms_per_round": 0.3810349997365847,
+    "n_clients": 14,
+    "n_malicious": 1,
+    "beta_mean": 0.05916666666666666,
+    "beta_std": 0.1366742884053585,
+    "beta_max": 0.5
+  },
+  {
+    "dataset": "yelp",
+    "target_kind": "demand_density",
+    "method": "fltrust",
+    "attack": "data",
+    "ratio": 0.1,
+    "seed": 1,
+    "selection": "vrf",
+    "forced_beta": null,
+    "mae": 0.010646623559296131,
+    "fairness_all": 0.001404478008740572,
+    "fairness_surge": 0.001621436217776833,
+    "fairness_nonsurge": 0.0004016383772566855,
+    "influence": {
+      "honest": 0.2825009975462792,
+      "malicious": 0.5058166561627099
+    },
+    "trust": {
+      "final_gap": NaN,
+      "convergence_round": NaN
+    },
+    "server_time_ms_per_round": 0.3558850003173575,
+    "n_clients": 14,
+    "n_malicious": 1,
+    "beta_mean": 0.09041666666666666,
+    "beta_std": 0.19439676994916008,
+    "beta_max": 1.0
+  },
+  {
+    "dataset": "yelp",
+    "target_kind": "demand_density",
+    "method": "fltrust",
+    "attack": "data",
+    "ratio": 0.1,
+    "seed": 2,
+    "selection": "vrf",
+    "forced_beta": null,
+    "mae": 0.012464425526559353,
+    "fairness_all": 0.001929942673999219,
+    "fairness_surge": 0.002083428090584732,
+    "fairness_nonsurge": 0.00050984758971076,
+    "influence": {
+      "honest": 0.341387869067234,
+      "malicious": 0.19308061657185868
+    },
+    "trust": {
+      "final_gap": NaN,
+      "convergence_round": NaN
+    },
+    "server_time_ms_per_round": 0.34909000678453594,
+    "n_clients": 14,
+    "n_malicious": 1,
+    "beta_mean": 0.10416666666666666,
+    "beta_std": 0.23329612798615698,
+    "beta_max": 1.0
+  },
+  {
+    "dataset": "yelp",
+    "target_kind": "demand_density",
+    "method": "fltrust",
+    "attack": "data",
+    "ratio": 0.1,
+    "seed": 3,
+    "selection": "vrf",
+    "forced_beta": null,
+    "mae": 0.05838046967983246,
+    "fairness_all": 0.001934622534355111,
+    "fairness_surge": 0.0017301677626308117,
+    "fairness_nonsurge": 0.001175053551846005,
+    "influence": {
+      "honest": 0.3251323815706924,
+      "malicious": 0.5690570584416221
+    },
+    "trust": {
+      "final_gap": NaN,
+      "convergence_round": NaN
+    },
+    "server_time_ms_per_round": 0.3397249907720834,
+    "n_clients": 14,
+    "n_malicious": 1,
+    "beta_mean": 0.09666666666666665,
+    "beta_std": 0.23787835359929477,
+    "beta_max": 1.0
+  },
+  {
+    "dataset": "yelp",
+    "target_kind": "demand_density",
+    "method": "fltrust",
+    "attack": "data",
+    "ratio": 0.1,
+    "seed": 4,
+    "selection": "vrf",
+    "forced_beta": null,
+    "mae": 0.011954139918088913,
+    "fairness_all": 0.0012254697360714606,
+    "fairness_surge": 0.001389689606823378,
+    "fairness_nonsurge": 0.00044161210530276274,
+    "influence": {
+      "honest": 0.32269942386481126,
+      "malicious": 0.30301994230823304
+    },
+    "trust": {
+      "final_gap": NaN,
+      "convergence_round": NaN
+    },
+    "server_time_ms_per_round": 0.34826750634238124,
+    "n_clients": 14,
+    "n_malicious": 1,
+    "beta_mean": 0.06708333333333333,
+    "beta_std": 0.1252490574371276,
+    "beta_max": 0.5
+  }
+]

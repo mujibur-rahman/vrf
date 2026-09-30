@@ -1,0 +1,152 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{Prediction MAE on yelp under three attack families and three adversarial ratios. Mean $\pm$ std over completed seeds. $\dagger$ marks a single-seed cell.}
+\label{tab:main_results}
+\begin{tabular}{lccccccccc}
+\toprule
+& \multicolumn{3}{c}{\textbf{Data poisoning}}& \multicolumn{3}{c}{\textbf{Model poisoning}}& \multicolumn{3}{c}{\textbf{Collusion}} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}
+\textbf{Method} & 10\% & 20\% & 40\% & 10\% & 20\% & 40\% & 10\% & 20\% & 40\% \\
+\midrule
+FedAvg & 0.004\,$\pm$\,0.001 & 0.648\,$\pm$\,0.450 & 0.827\,$\pm$\,0.394 & 0.801\,$\pm$\,1.764 & 1747.202\,$\pm$\,3906.607 & 397515918425.600\,$\pm$\,470155336953.217 & 0.002\,$\pm$\,0.000 & 0.019\,$\pm$\,0.036 & 0.024\,$\pm$\,0.040 \\
+Trimmed Mean & 0.136\,$\pm$\,0.199 & 0.297\,$\pm$\,0.194 & 0.534\,$\pm$\,0.418 & 0.075\,$\pm$\,0.081 & 3.645\,$\pm$\,7.343 & 5127791027.200\,$\pm$\,4065502852.071 & 0.003\,$\pm$\,0.002 & 0.013\,$\pm$\,0.022 & 0.051\,$\pm$\,0.060 \\
+Krum & 0.007\,$\pm$\,0.003 & 0.223\,$\pm$\,0.494 & 0.466\,$\pm$\,0.580 & 0.007\,$\pm$\,0.003 & 0.064\,$\pm$\,0.083 & 11831147763.256\,$\pm$\,26454863579.716 & 0.007\,$\pm$\,0.003 & 0.019\,$\pm$\,0.009 & 423.227\,$\pm$\,944.193 \\
+FLTrust & 0.020\,$\pm$\,0.022 & 0.031\,$\pm$\,0.035 & 0.022\,$\pm$\,0.013 & 0.008\,$\pm$\,0.001 & 0.013\,$\pm$\,0.009 & 0.013\,$\pm$\,0.002 & 0.011\,$\pm$\,0.005 & 0.011\,$\pm$\,0.005 & 0.017\,$\pm$\,0.009 \\
+FoolsGold & 0.027\,$\pm$\,0.026 & 0.158\,$\pm$\,0.287 & 0.555\,$\pm$\,0.403 & 0.009\,$\pm$\,0.004 & 0.053\,$\pm$\,0.082 & 35948.489\,$\pm$\,76652.455 & 0.003\,$\pm$\,0.001 & 0.020\,$\pm$\,0.021 & 0.020\,$\pm$\,0.013 \\
+\textbf{Ours} & 0.004\,$\pm$\,0.002 & 0.286\,$\pm$\,0.247 & 0.348\,$\pm$\,0.250 & 0.061\,$\pm$\,0.098 & 0.072\,$\pm$\,0.075 & 10692612935.843\,$\pm$\,13277288553.480 & 0.008\,$\pm$\,0.004 & 0.008\,$\pm$\,0.002 & 7.343\,$\pm$\,16.221 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Robustness degradation on yelp under model poisoning at 20\% adversarial clients, $(\mathrm{MAE}_{\mathrm{attack}}-\mathrm{MAE}_{\mathrm{benign}})/\mathrm{MAE}_{\mathrm{benign}}$.}
+\label{tab:degradation}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Method} & \textbf{Benign MAE} & \textbf{Attack MAE} & \textbf{Degradation} \\
+\midrule
+FedAvg & 0.004\,$\pm$\,0.004 & 1747.202\,$\pm$\,3906.607 & 1272086.05\,$\pm$\,2844325.86 \\
+Trimmed Mean & 0.004\,$\pm$\,0.002 & 3.645\,$\pm$\,7.343 & 738.06\,$\pm$\,1322.57 \\
+Krum & 0.005\,$\pm$\,0.002 & 0.064\,$\pm$\,0.083 & 8.77\,$\pm$\,11.57 \\
+FLTrust & 0.011\,$\pm$\,0.002 & 0.013\,$\pm$\,0.009 & 0.22\,$\pm$\,0.77 \\
+FoolsGold & 0.005\,$\pm$\,0.002 & 0.053\,$\pm$\,0.082 & 7.27\,$\pm$\,9.37 \\
+\textbf{Ours} & 0.004\,$\pm$\,0.003 & 0.072\,$\pm$\,0.075 & 13.00\,$\pm$\,9.54 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Standard deviation of per-region MAE. Lower values indicate more consistent regional error. This is a measure of error consistency, not of fare fairness.}
+\label{tab:fairness}
+\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Method} & \textbf{All Regions $\downarrow$} & \textbf{Surge Zones $\downarrow$} & \textbf{Non-Surge Zones $\downarrow$} \\
+\midrule
+FedAvg & 219.413\,$\pm$\,490.596 & 192.107\,$\pm$\,429.540 & 107.096\,$\pm$\,239.460 \\
+Trimmed Mean & 0.480\,$\pm$\,0.969 & 0.438\,$\pm$\,0.872 & 0.298\,$\pm$\,0.627 \\
+Krum & 0.011\,$\pm$\,0.014 & 0.011\,$\pm$\,0.014 & 0.005\,$\pm$\,0.006 \\
+FLTrust & 0.003\,$\pm$\,0.001 & 0.003\,$\pm$\,0.001 & 0.001\,$\pm$\,0.001 \\
+FoolsGold & 0.010\,$\pm$\,0.014 & 0.011\,$\pm$\,0.014 & 0.004\,$\pm$\,0.006 \\
+\textbf{Ours} & 0.016\,$\pm$\,0.014 & 0.017\,$\pm$\,0.014 & 0.006\,$\pm$\,0.006 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Client influence, Eq.~(\ref{eq:influence}), averaged over selected rounds and grouped by client type. The uniform share is reported for reference.}
+\label{tab:trust_influence}
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Method} & \textbf{Honest $\uparrow$} & \textbf{Malicious $\downarrow$} & \textbf{Trust conv. (rounds)} \\
+\midrule
+FedAvg & 0.301\,$\pm$\,0.033 & 0.497\,$\pm$\,0.100 & -- \\
+Trimmed Mean & 0.275\,$\pm$\,0.028 & 0.576\,$\pm$\,0.082 & -- \\
+Krum & 0.371\,$\pm$\,0.029 & 0.160\,$\pm$\,0.075 & -- \\
+FLTrust & 0.363\,$\pm$\,0.027 & 0.112\,$\pm$\,0.091 & -- \\
+FoolsGold & 0.260\,$\pm$\,0.018 & 0.623\,$\pm$\,0.085 & -- \\
+\textbf{Ours} & 0.286\,$\pm$\,0.022 & 0.537\,$\pm$\,0.050 & 38.4\,$\pm$\,1.8 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Realised adversarial share $\beta_t$ and resulting MAE under the three selection regimes of Proposition~\ref{prop:concentration}, at $\alpha=0.20$.}
+\label{tab:selection}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Selection regime} & $\bar{\beta}_t$ & \textbf{MAE} \\
+\midrule
+Honest uniform sampling & -- & -- \\
+VRF self-selection & -- & -- \\
+Biasing coordinator & -- & -- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Measured per-round overhead. Server time is the aggregation cost; proof verification is reported separately because it applies only to the selection stage.}
+\label{tab:overhead}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Method} & \textbf{Server time (ms/round)} & \textbf{Proof verify (ms/client)} \\
+\midrule
+FedAvg & 0.1\,$\pm$\,0.0 & -- \\
+Trimmed Mean & 1.0\,$\pm$\,0.0 & -- \\
+Krum & 0.5\,$\pm$\,0.1 & -- \\
+FLTrust & 0.3\,$\pm$\,0.0 & -- \\
+FoolsGold & 0.4\,$\pm$\,0.1 & -- \\
+\textbf{Ours} & 0.9\,$\pm$\,0.1 & 0.057 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Empirical breakdown point: the smallest committee adversarial share $\beta$ at which MAE exceeds its $\beta=0$ value by 10\%.}
+\label{tab:breakdown}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Method} & \textbf{Model poisoning} & \textbf{Collusion} \\
+\midrule
+FedAvg & 0.05 & 0.05 \\
+Trimmed Mean & 0.30 & 0.20 \\
+Krum & $>$0.50 & 0.35 \\
+FLTrust & $>$0.50 & 0.20 \\
+FoolsGold & 0.05 & $>$0.50 \\
+\textbf{Ours} & 0.05 & 0.15 \\
+FedAvg & 0.10 & 0.25 \\
+Trimmed Mean & 0.25 & 0.25 \\
+Krum & 0.50 & 0.40 \\
+FLTrust & 0.40 & $>$0.50 \\
+FoolsGold & 0.10 & 0.50 \\
+\textbf{Ours} & 0.10 & 0.25 \\
+FedAvg & 0.15 & 0.25 \\
+Trimmed Mean & 0.35 & 0.30 \\
+Krum & $>$0.50 & 0.30 \\
+FLTrust & 0.40 & $>$0.50 \\
+FoolsGold & 0.05 & $>$0.50 \\
+\textbf{Ours} & 0.25 & 0.30 \\
+FedAvg & 0.20 & 0.50 \\
+Trimmed Mean & 0.20 & 0.50 \\
+Krum & 0.20 & 0.20 \\
+FLTrust & 0.20 & 0.50 \\
+FoolsGold & 0.20 & $>$0.50 \\
+\textbf{Ours} & 0.20 & 0.50 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Ablation under 20\% adversarial clients (model poisoning). Selection axis: a biasing coordinator concentrates the committee to $\beta=0.5$ without VRF, while VRF holds $\beta=\alpha=0.2$. Lower is better.}
+\label{tab:ablation}
+\scriptsize
+\begin{tabular}{lccc}
+\toprule
+\textbf{Method Variant} & \textbf{MAE $\downarrow$} & \textbf{Fairness $\downarrow$} & \textbf{Mal. Inf. $\downarrow$} \\
+\midrule
+FedAvg & $3e+05$ & $1e+05$ & \textbf{0.033\,$\pm$\,0.000} \\
+Trust only & $3e+04$ & $1e+04$ & 0.035\,$\pm$\,0.000 \\
+VRF only & $2e+02$ & 69.177\,$\pm$\,23.940 & 0.056\,$\pm$\,0.000 \\
+Full method & \textbf{0.238\,$\pm$\,0.002} & \textbf{0.137\,$\pm$\,0.006} & 0.048\,$\pm$\,0.001 \\
+\bottomrule
+\end{tabular}
+\end{table}

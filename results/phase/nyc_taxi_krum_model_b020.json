@@ -1,0 +1,142 @@
+[
+  {
+    "dataset": "nyc_taxi",
+    "target_kind": "surge_proxy",
+    "method": "krum",
+    "attack": "model",
+    "ratio": 0.5,
+    "seed": 0,
+    "selection": "vrf",
+    "forced_beta": 0.2,
+    "mae": 0.2820519208908081,
+    "fairness_all": 0.16706087541333756,
+    "fairness_surge": 0.20769635767293435,
+    "fairness_nonsurge": 0.09318906811681206,
+    "influence": {
+      "honest": 0.02159059447599364,
+      "malicious": 0.0
+    },
+    "trust": {
+      "final_gap": NaN,
+      "convergence_round": NaN
+    },
+    "server_time_ms_per_round": 358.3671525002501,
+    "n_clients": 249,
+    "n_malicious": 124,
+    "beta_mean": 0.2,
+    "beta_std": 0.0,
+    "beta_max": 0.2
+  },
+  {
+    "dataset": "nyc_taxi",
+    "target_kind": "surge_proxy",
+    "method": "krum",
+    "attack": "model",
+    "ratio": 0.5,
+    "seed": 1,
+    "selection": "vrf",
+    "forced_beta": 0.2,
+    "mae": 0.253947913646698,
+    "fairness_all": 0.15622455260907084,
+    "fairness_surge": 0.19628275943607548,
+    "fairness_nonsurge": 0.08276644899778984,
+    "influence": {
+      "honest": 0.02792544823590656,
+      "malicious": 0.0
+    },
+    "trust": {
+      "final_gap": NaN,
+      "convergence_round": NaN
+    },
+    "server_time_ms_per_round": 357.5754050003525,
+    "n_clients": 249,
+    "n_malicious": 124,
+    "beta_mean": 0.2,
+    "beta_std": 0.0,
+    "beta_max": 0.2
+  },
+  {
+    "dataset": "nyc_taxi",
+    "target_kind": "surge_proxy",
+    "method": "krum",
+    "attack": "model",
+    "ratio": 0.5,
+    "seed": 2,
+    "selection": "vrf",
+    "forced_beta": 0.2,
+    "mae": 0.2438337802886963,
+    "fairness_all": 0.14970980266322662,
+    "fairness_surge": 0.18306180195706373,
+    "fairness_nonsurge": 0.08190548662422845,
+    "influence": {
+      "honest": 0.02641795981789577,
+      "malicious": 0.0
+    },
+    "trust": {
+      "final_gap": NaN,
+      "convergence_round": NaN
+    },
+    "server_time_ms_per_round": 328.0081949995292,
+    "n_clients": 249,
+    "n_malicious": 124,
+    "beta_mean": 0.2,
+    "beta_std": 0.0,
+    "beta_max": 0.2
+  },
+  {
+    "dataset": "nyc_taxi",
+    "target_kind": "surge_proxy",
+    "method": "krum",
+    "attack": "model",
+    "ratio": 0.5,
+    "seed": 3,
+    "selection": "vrf",
+    "forced_beta": 0.2,
+    "mae": 0.2507341206073761,
+    "fairness_all": 0.14240062062027625,
+    "fairness_surge": 0.17408561970372188,
+    "fairness_nonsurge": 0.08062748639129824,
+    "influence": {
+      "honest": 0.025254700854639316,
+      "malicious": 0.0
+    },
+    "trust": {
+      "final_gap": NaN,
+      "convergence_round": NaN
+    },
+    "server_time_ms_per_round": 346.18502000012086,
+    "n_clients": 249,
+    "n_malicious": 124,
+    "beta_mean": 0.2,
+    "beta_std": 0.0,
+    "beta_max": 0.2
+  },
+  {
+    "dataset": "nyc_taxi",
+    "target_kind": "surge_proxy",
+    "method": "krum",
+    "attack": "model",
+    "ratio": 0.5,
+    "seed": 4,
+    "selection": "vrf",
+    "forced_beta": 0.2,
+    "mae": 0.27019938826560974,
+    "fairness_all": 0.1630142757981033,
+    "fairness_surge": 0.19990742890543045,
+    "fairness_nonsurge": 0.09197437502906437,
+    "influence": {
+      "honest": 0.023455325067032302,
+      "malicious": 0.0
+    },
+    "trust": {
+      "final_gap": NaN,
+      "convergence_round": NaN
+    },
+    "server_time_ms_per_round": 317.36579000007623,
+    "n_clients": 249,
+    "n_malicious": 124,
+    "beta_mean": 0.2,
+    "beta_std": 0.0,
+    "beta_max": 0.2
+  }
+]

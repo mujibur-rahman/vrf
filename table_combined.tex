@@ -1,0 +1,44 @@
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\caption{Prediction MAE across all four datasets under each attack family at 20\% adversarial clients (benign column for reference). Mean $\pm$ std over 5 seeds; the best (lowest) MAE per column within each dataset is \underline{underlined}. Diverged cells are shown in scientific form. Lower is better.}
+\label{tab:combined}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Method} & \textbf{Benign} & \textbf{Data} & \textbf{Model} & \textbf{Collusion} \\
+\midrule
+\multicolumn{5}{l}{\textit{NYC-Taxi}} \\
+FedAvg & 0.231\,$\pm$\,0.003 & 0.255\,$\pm$\,0.010 & 373 & 0.277\,$\pm$\,0.041 \\
+Trimmed Mean & 0.233\,$\pm$\,0.004 & 0.252\,$\pm$\,0.008 & \underline{0.237\,$\pm$\,0.004} & 0.252\,$\pm$\,0.013 \\
+Krum & 0.269\,$\pm$\,0.013 & 0.277\,$\pm$\,0.040 & 0.268\,$\pm$\,0.015 & 0.263\,$\pm$\,0.022 \\
+FLTrust & \underline{0.229\,$\pm$\,0.005} & \underline{0.231\,$\pm$\,0.013} & 0.248\,$\pm$\,0.010 & 0.252\,$\pm$\,0.009 \\
+FoolsGold & 0.235\,$\pm$\,0.006 & 0.239\,$\pm$\,0.004 & 31.255\,$\pm$\,68.920 & \underline{0.234\,$\pm$\,0.003} \\
+\textbf{Ours} & 0.233\,$\pm$\,0.002 & 0.251\,$\pm$\,0.009 & 0.238\,$\pm$\,0.004 & 0.251\,$\pm$\,0.009 \\
+\midrule
+\multicolumn{5}{l}{\textit{Foursquare}} \\
+FedAvg & 0.179\,$\pm$\,0.041 & 0.222\,$\pm$\,0.067 & 7808 & 0.354\,$\pm$\,0.290 \\
+Trimmed Mean & 0.165\,$\pm$\,0.003 & 0.199\,$\pm$\,0.035 & 0.173\,$\pm$\,0.007 & 0.209\,$\pm$\,0.022 \\
+Krum & 0.203\,$\pm$\,0.007 & 0.217\,$\pm$\,0.008 & 0.204\,$\pm$\,0.005 & 0.213\,$\pm$\,0.018 \\
+FLTrust & \underline{0.164\,$\pm$\,0.003} & 0.197\,$\pm$\,0.033 & 0.179\,$\pm$\,0.014 & 0.186\,$\pm$\,0.021 \\
+FoolsGold & 0.169\,$\pm$\,0.004 & \underline{0.169\,$\pm$\,0.008} & 0.215\,$\pm$\,0.058 & \underline{0.173\,$\pm$\,0.003} \\
+\textbf{Ours} & 0.167\,$\pm$\,0.001 & 0.213\,$\pm$\,0.024 & \underline{0.172\,$\pm$\,0.002} & 0.198\,$\pm$\,0.011 \\
+\midrule
+\multicolumn{5}{l}{\textit{Yelp}} \\
+FedAvg & 0.004\,$\pm$\,0.004 & 0.648\,$\pm$\,0.450 & 1747 & 0.019\,$\pm$\,0.036 \\
+Trimmed Mean & 0.004\,$\pm$\,0.002 & 0.297\,$\pm$\,0.194 & 3.645\,$\pm$\,7.343 & 0.013\,$\pm$\,0.022 \\
+Krum & 0.005\,$\pm$\,0.002 & 0.223\,$\pm$\,0.494 & 0.064\,$\pm$\,0.083 & 0.019\,$\pm$\,0.009 \\
+FLTrust & 0.011\,$\pm$\,0.002 & \underline{0.031\,$\pm$\,0.035} & \underline{0.013\,$\pm$\,0.009} & \underline{0.011\,$\pm$\,0.005} \\
+FoolsGold & 0.005\,$\pm$\,0.002 & 0.158\,$\pm$\,0.287 & 0.053\,$\pm$\,0.082 & 0.020\,$\pm$\,0.021 \\
+\textbf{Ours} & \underline{0.003\,$\pm$\,0.001} & 0.290\,$\pm$\,0.472 & 0.061\,$\pm$\,0.084 & 0.021\,$\pm$\,0.029 \\
+\midrule
+\multicolumn{5}{l}{\textit{Geolife}} \\
+FedAvg & 0.380\,$\pm$\,0.029 & 0.444\,$\pm$\,0.033 & $2.2{\times}10^{8}$ & 0.437\,$\pm$\,0.071 \\
+Trimmed Mean & \underline{0.374\,$\pm$\,0.023} & 0.449\,$\pm$\,0.080 & 0.922\,$\pm$\,0.788 & 0.492\,$\pm$\,0.093 \\
+Krum & 0.469\,$\pm$\,0.060 & 0.673\,$\pm$\,0.327 & 0.506\,$\pm$\,0.091 & 0.659\,$\pm$\,0.214 \\
+FLTrust & 0.395\,$\pm$\,0.017 & \underline{0.435\,$\pm$\,0.050} & \underline{0.409\,$\pm$\,0.023} & \underline{0.401\,$\pm$\,0.013} \\
+FoolsGold & 0.380\,$\pm$\,0.008 & 0.460\,$\pm$\,0.136 & 227 & 0.421\,$\pm$\,0.056 \\
+\textbf{Ours} & 0.400\,$\pm$\,0.012 & 0.485\,$\pm$\,0.099 & 0.421\,$\pm$\,0.043 & 0.405\,$\pm$\,0.040 \\
+\bottomrule
+\end{tabular}
+\end{table*}

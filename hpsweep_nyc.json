@@ -1,0 +1,76 @@
+{
+  "days": 7,
+  "clients": 249,
+  "selected": {
+    "ours": "psi=0.5,lam=0.85",
+    "trimmed_mean": "trim=0.3",
+    "fltrust": "root=400"
+  },
+  "val_mae": {
+    "ours|psi=0.5,lam=0.7": 0.24661911775668463,
+    "ours|psi=0.5,lam=0.85": 0.24548946817715964,
+    "ours|psi=0.5,lam=0.95": 0.24580991019805273,
+    "ours|psi=0.7,lam=0.7": 0.24675297240416208,
+    "ours|psi=0.7,lam=0.85": 0.2473499278227488,
+    "ours|psi=0.7,lam=0.95": 0.2456394707163175,
+    "ours|psi=0.85,lam=0.7": 0.2469730575879415,
+    "ours|psi=0.85,lam=0.85": 0.248783012231191,
+    "ours|psi=0.85,lam=0.95": 0.24809048076470694,
+    "ours|psi=0.95,lam=0.7": 0.24789154281218848,
+    "ours|psi=0.95,lam=0.85": 0.2466078375776609,
+    "ours|psi=0.95,lam=0.95": 0.24976758162180582,
+    "trimmed_mean|trim=0.1": 0.2556489830215772,
+    "trimmed_mean|trim=0.2": 0.24589347591002783,
+    "trimmed_mean|trim=0.3": 0.24503619968891144,
+    "fltrust|root=100": 0.3038194353381793,
+    "fltrust|root=200": 0.27006610731283825,
+    "fltrust|root=400": 0.2517387568950653
+  },
+  "test": {
+    "fedavg/selected": {
+      "setting": "default",
+      "model": 159.4556457519531,
+      "collusion": 0.2743756115436554
+    },
+    "trimmed_mean/selected": {
+      "setting": "trim=0.3",
+      "model": 0.2561151921749115,
+      "collusion": 0.25597219467163085
+    },
+    "trimmed_mean/default": {
+      "setting": "trim=0.2",
+      "model": 0.25659960210323335,
+      "collusion": 0.2528568059206009
+    },
+    "krum/selected": {
+      "setting": "default",
+      "model": 0.27028222680091857,
+      "collusion": 0.2707152128219604
+    },
+    "fltrust/selected": {
+      "setting": "root=400",
+      "model": 0.25144430100917814,
+      "collusion": 0.2510844558477402
+    },
+    "fltrust/default": {
+      "setting": "root=200",
+      "model": 0.2664801090955734,
+      "collusion": 0.2761825382709503
+    },
+    "foolsgold/selected": {
+      "setting": "default",
+      "model": 13.95425162911415,
+      "collusion": 0.25127792060375215
+    },
+    "ours/selected": {
+      "setting": "psi=0.5,lam=0.85",
+      "model": 0.25184731781482694,
+      "collusion": 0.2546380251646042
+    },
+    "ours/default": {
+      "setting": "psi=0.7,lam=0.85",
+      "model": 0.25075792968273164,
+      "collusion": 0.25972025394439696
+    }
+  }
+}

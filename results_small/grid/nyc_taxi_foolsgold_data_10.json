@@ -1,0 +1,86 @@
+[
+  {
+    "dataset": "nyc_taxi",
+    "target_kind": "surge_proxy",
+    "method": "foolsgold",
+    "attack": "data",
+    "ratio": 0.1,
+    "seed": 0,
+    "selection": "vrf",
+    "forced_beta": null,
+    "mae": 0.3816085457801819,
+    "fairness_all": 0.09200414034211171,
+    "fairness_surge": 0.09785393918709501,
+    "fairness_nonsurge": 0.0843033044651474,
+    "influence": {
+      "honest": 0.07149412700748077,
+      "malicious": 0.04311765860556955
+    },
+    "trust": {
+      "final_gap": NaN,
+      "convergence_round": NaN
+    },
+    "server_time_ms_per_round": 9.57263999953284,
+    "n_clients": 74,
+    "n_malicious": 7,
+    "beta_mean": 0.09287269296750719,
+    "beta_std": 0.06557700379041102,
+    "beta_max": 0.3333333333333333
+  },
+  {
+    "dataset": "nyc_taxi",
+    "target_kind": "surge_proxy",
+    "method": "foolsgold",
+    "attack": "data",
+    "ratio": 0.1,
+    "seed": 1,
+    "selection": "vrf",
+    "forced_beta": null,
+    "mae": 0.3878849446773529,
+    "fairness_all": 0.08629494531008476,
+    "fairness_surge": 0.09001268762061491,
+    "fairness_nonsurge": 0.08072956527843958,
+    "influence": {
+      "honest": 0.06846518457413432,
+      "malicious": 0.0491918368258742
+    },
+    "trust": {
+      "final_gap": NaN,
+      "convergence_round": NaN
+    },
+    "server_time_ms_per_round": 9.134987500146963,
+    "n_clients": 74,
+    "n_malicious": 7,
+    "beta_mean": 0.08628474251926263,
+    "beta_std": 0.06518820126399191,
+    "beta_max": 0.2727272727272727
+  },
+  {
+    "dataset": "nyc_taxi",
+    "target_kind": "surge_proxy",
+    "method": "foolsgold",
+    "attack": "data",
+    "ratio": 0.1,
+    "seed": 2,
+    "selection": "vrf",
+    "forced_beta": null,
+    "mae": 0.3976457118988037,
+    "fairness_all": 0.0860056228528723,
+    "fairness_surge": 0.09093041297536983,
+    "fairness_nonsurge": 0.07933920476290277,
+    "influence": {
+      "honest": 0.07300301879369579,
+      "malicious": 0.027589089314238424
+    },
+    "trust": {
+      "final_gap": NaN,
+      "convergence_round": NaN
+    },
+    "server_time_ms_per_round": 8.562875000643544,
+    "n_clients": 74,
+    "n_malicious": 7,
+    "beta_mean": 0.10872183320635331,
+    "beta_std": 0.061953362314852406,
+    "beta_max": 0.2857142857142857
+  }
+]
